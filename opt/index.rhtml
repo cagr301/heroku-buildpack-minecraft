@@ -1,6 +1,36 @@
-<% open('ngrok.log') do |f| %>
-  <% f.lines.select { |line| line.include?("URL:") }.each do |line| %>
-    Server available at: <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <title>
+    Minecraft Server
+  </title>
+  <style>
+    body {
+      background-color: powderblue;
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
+</head>
+<body>
+  <center>
     <br />
-  <% end %>
-<% end %>
+    <h2>
+      --==Heroku Server==-- [Join Today]
+    </h2>
+    <br />
+    <br />
+      
+        
+        <% open('ngrok.log') do |f| %>
+          <% f.lines.select { |line| line.include?("URL:") }.each do |line| %>
+           Server Available From: <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
+          <br />
+         <% end %>
+        <% end %>
+        <br />
+      
+    
+    <h4>
+      Basic Minecraft Server Made With Heroku & Ngrok
+    </h4>
+  </center>
+</body>
