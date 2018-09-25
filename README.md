@@ -16,7 +16,7 @@ $ git add eula.txt
 $ git commit -m "first commit"
 ```
 
-Then, install the [Heroku toolbelt](https://toolbelt.heroku.com/).
+If preferred, install the [Heroku toolbelt](https://toolbelt.heroku.com/).
 Create a Heroku app, set your ngrok token, and push:
 
 ```sh-session
