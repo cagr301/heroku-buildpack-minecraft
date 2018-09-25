@@ -66,9 +66,9 @@ minecraft_version=${MINECRAFT_VERSION:-"1.13"}
 
 if echo "$minecraft_version" | grep -q '^1\.13.*$'; then
   minecraft_uuid="${MINECRAFT_UUID:="d0caafb8438ebd206f99930cfaecfa6c9a13dca0"}"
-  minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
+  minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"
 else
-  minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
+  minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"
 fi
 
 echo -n "-----> Installing Minecraft ${minecraft_version}... "
