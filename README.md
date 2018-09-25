@@ -1,7 +1,7 @@
 # Heroku Minecraft Buildpack
 
 This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks)
-for running a Minecraft spigot server in a [dyno](https://devcenter.heroku.com/articles/dynos).
+for running a Minecraft Spigot server in a [dyno](https://devcenter.heroku.com/articles/dynos).
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -42,6 +42,8 @@ Server available at: 0.tcp.ngrok.io:17003
 
 Copy the `0.tcp.ngrok.io:17003` part, and paste it into your local Minecraft app
 as the server name.
+
+*Note* To keep the server online, you can also create a free [Uptime Robot Account](https://uptimerobot.com)
 
 ## Syncing to S3
 
@@ -87,6 +89,6 @@ You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
 ```
 $ heroku config:set MINECRAFT_VERSION="1.8.3"
 ```
-The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder, and add any other files you'd like. The website can also be configured from opt/index.rhtml 
+The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder (The server already contains EssentialsX), and add any other files you'd like such as spigot.yml, or a world. The website can also be configured from opt/index.rhtml 
 
 **WARNING** Do not delete the current file contents, they are very important.
