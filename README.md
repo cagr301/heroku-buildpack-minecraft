@@ -1,7 +1,7 @@
 # Heroku Minecraft Buildpack
 
 This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks)
-for running a Minecraft server in a [dyno](https://devcenter.heroku.com/articles/dynos).
+for running a Minecraft spigot server in a [dyno](https://devcenter.heroku.com/articles/dynos).
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -80,14 +80,6 @@ $ screen -r minecraft
 
 ## Customizing
 
-### ngrok
-
-You can customize ngrok by setting the `NGROK_OPTS` config variable. For example:
-
-```
-$ heroku config:set NGROK_OPTS="--remote-addr 1.tcp.ngrok.io:25565"
-```
-
 ### Minecraft
 
 You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
@@ -95,11 +87,6 @@ You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
 ```
 $ heroku config:set MINECRAFT_VERSION="1.8.3"
 ```
+The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder, and add any other files you'd like. The website can also be configured from opt/index.rhtml 
 
-You can also configure the server properties by creating a `server.properties`
-file in your project and adding it to Git. This is how you would set things like
-Creative mode and Hardcore difficulty. The various options available are
-described on the [Minecraft Wiki](http://minecraft.gamepedia.com/Server.properties).
-
-You can add files such as `banned-players.json`, `banned-ips.json`, `ops.json`,
-`whitelist.json` to your Git repository and the Minecraft server will pick them up.
+**WARNING** Do not delete the current file contents, they are very important.
