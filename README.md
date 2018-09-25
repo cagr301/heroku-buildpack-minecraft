@@ -47,7 +47,7 @@ as the server name.
 
 **Note** 
 To keep the server online, you can also create a free [Uptime Robot Account](https://uptimerobot.com)
-Aditional to this, you can set up PointDNS and create a srv record with the following name:
+. Aditional to this, you can set up PointDNS and create a srv record with the following name:
 ```
 _minecraft._tcp.yoururl
 ```
