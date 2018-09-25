@@ -93,6 +93,6 @@ You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
 ```
 $ heroku config:set MINECRAFT_VERSION="1.8.3"
 ```
-The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder (The server already contains EssentialsX), and add any other files you'd like such as spigot.yml, or a world. The website can also be configured from opt/index.rhtml 
+The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder, and add any other files you'd like such as spigot.yml, or a world. The website can also be configured from opt/index.rhtml 
 
-**WARNING** Do not delete the current file contents, they are very important.
+**Additional Notes** The server version/software can be changed from bin/compile, and replace ```minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"```. Additionally, the server already contains EssentialsX. Additionally, t
