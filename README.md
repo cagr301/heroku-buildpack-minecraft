@@ -43,7 +43,8 @@ Server available at: 0.tcp.ngrok.io:17003
 Copy the `0.tcp.ngrok.io:17003` part, and paste it into your local Minecraft app
 as the server name.
 
-*Note* To keep the server online, you can also create a free [Uptime Robot Account](https://uptimerobot.com)
+**Note** 
+To keep the server online, you can also create a free [Uptime Robot Account](https://uptimerobot.com)
 
 ## Syncing to S3
 
