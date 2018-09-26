@@ -20,7 +20,7 @@ $serverName = "My Server";
 
 $rconHost = "localhost";
 $rconPort = 25575;
-$rconPassword = "rconpassword";
+$rconPassword = "rpassword";
 
 $queryHost = "localhost";
 $queryPort = 25585;
