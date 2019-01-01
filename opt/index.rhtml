@@ -14,7 +14,7 @@
   <center>
     <br />
     <h2>
-      --==Heroku Server==-- [Join Today]
+      owoarmy's minecraft server!
     </h2>
     <br />
     <br />
@@ -22,7 +22,7 @@
         
         <% open('ngrok.log') do |f| %>
           <% f.lines.select { |line| line.include?("URL:") }.each do |line| %>
-           Server Available From: <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
+           The IP: <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
           <br />
          <% end %>
         <% end %>
@@ -30,7 +30,7 @@
       
     
     <h4>
-      Basic Minecraft Server Made With Heroku & Ngrok
+      Server made with Heroku and Ngrok.
     </h4>
   </center>
   <script>
